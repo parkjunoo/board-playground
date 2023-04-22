@@ -1,0 +1,35 @@
+playground-frontend/node_modules
+
+playground-backend/HELP.md
+playground-backend/target/
+playground-backend/!.mvn/wrapper/maven-wrapper.jar
+playground-backend/!**/src/main/**/target/
+playground-backend/!**/src/test/**/target/
+
+### STS ###
+playground-backend/.apt_generated
+playground-backend/.classpath
+playground-backend/.factorypath
+playground-backend/.project
+playground-backend/.settings
+playground-backend/.springBeans
+playground-backend/.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+playground-backend/nbproject/private/
+playground-backend/nbbuild/
+playground-backend/dist/
+playground-backend/nbdist/
+playground-backend/.nb-gradle/
+playground-backend/build/
+playground-backend/!**/src/main/**/build/
+playground-backend/!**/src/test/**/build/
+
+### VS Code ###
+playground-backend/.vscode/
