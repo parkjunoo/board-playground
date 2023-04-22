@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
-import { Constant } from 'src/core/constant';
+import Constant from '../core/constant';
 
 class Service {
   private axiosInstance: AxiosInstance;
@@ -29,6 +29,6 @@ class Service {
     return this.axiosInstance.delete(url);
   }
 }
-const api = { upbit: new Service(Constant.UPBIT_BASE_URL) };
+const api = { service: new Service(Constant.BASE_URL) };
 
 export { api };

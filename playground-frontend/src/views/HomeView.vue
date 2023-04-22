@@ -1,18 +1,17 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-  </div>
+  <div>gkdlgkdl</div>
 </template>
+<script lang="ts" setup>
+import { ref, computed, toRefs, watch, onMounted } from 'vue';
+import { getFirstData } from '../core/request';
+const props = defineProps({});
+const emit = defineEmits([]);
+const test = ref('');
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-
-@Options({
-  components: {
-    HelloWorld,
-  },
-})
-export default class HomeView extends Vue {}
+onMounted(async () => {
+  await getFirstData().then(res => {
+    console.log(res);
+  });
+});
 </script>
+<style lang="scss" scoped></style>
